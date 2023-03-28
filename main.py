@@ -35,9 +35,3 @@ c.execute("DELETE FROM user WHERE rowid % 2 = 0")
 print(c.fetchall())
 db.commit()
 db.close()
-
-
-
-
-
-
