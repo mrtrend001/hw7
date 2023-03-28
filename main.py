@@ -27,8 +27,10 @@ c.execute("UPDATE user SET name = 'genius' WHERE points = 10")
 c.execute("SELECT rowid, surname, name FROM user ")
 items = c.fetchall()
 print(items)
-for i in items: surname = i[1]
-if len(surname) > 10: print(surname)
+for i in items:
+    surname = i[1]
+if len(surname) > 10:
+    print(surname)
 else: ...
 c.execute("SELECT rowid, name FROM user WHERE name = 'genius'")
 c.execute("DELETE FROM user WHERE rowid % 2 = 0")
